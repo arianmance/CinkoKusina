@@ -11,35 +11,42 @@
   <style>
     body {
       font-family: "Poppins", sans-serif;
-      background-color: #ccaf8b;
+      background-color: #856136;
     }
 
     /* Navbar */
     .navbar-custom {
-      background: linear-gradient(to right, #e8dcc9, #cabba5);
+      background: linear-gradient(to right, #765a2e, #cabba5);
     }
+    .nav-logo {
+  width: 80px;        
+  height: 80px;      
+  object-fit: cover;  
+  border-radius: 50%; 
+}
 
     .logo-text {
-      font-size: 2rem;
+      font-size: 2.5rem;
       letter-spacing: 5px;
-      font-weight: 700;
+      font-weight: 800;
     }
 
     .logo-text span {
-      color: #6abd74;
+      color: #3f5841;
       font-style: italic;
     }
 
     /* Hero Section */
     .hero {
       position: relative;
-      background-image: url("your-image.jpg"); /* ← Replace with your image */
+      background-image: url("bg.png"); 
       background-size: cover;
       background-position: center;
       height: 80vh;
       display: flex;
       align-items: center;
       justify-content: center;
+      text-decoration: none;
     }
 
     /* Buttons */
@@ -52,6 +59,7 @@
       margin: 10px;
       box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
       transition: 0.2s;
+      text-decoration: none;
     }
 
     .menu-btn:hover {
@@ -73,6 +81,7 @@
       align-items: center;
       gap: 8px;
       box-shadow: 0px 4px 6px rgba(0,0,0,0.25);
+      text-decoration: none;
     }
 
     .contact-btn img {
@@ -86,15 +95,15 @@
   <!-- NAVBAR -->
   <nav class="navbar navbar-custom px-4">
     <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="logo.png" width="45" class="me-2">  <!-- Replace logo -->
-      <span class="logo-text">C I N K O <span>KUSINA</span></span>
+      <img src="cklogo.jpg" class="me-2 nav-logo">
+      <span class="logo-text"> C I N K O <span> KUSINA </span></span>
     </a>
   </nav>
 
   <!-- HERO SECTION -->
   <section class="hero">
 
-    <div class="text-center">
+    <div class="text-center" >
       <a href="#" class="menu-btn d-inline-block">OUR MENU</a>
       <a href="#" class="menu-btn d-inline-block">ABOUT PAGE</a>
     </div>
