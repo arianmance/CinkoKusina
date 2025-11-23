@@ -49,6 +49,17 @@ input{
     border-top: 0cap;
     transform-style: preserve-3d;
 }
+.form-control:hover,
+.form-select:hover {
+    border-color: rgb(28, 209, 43) !important;
+    box-shadow: 0 0 10px rgba(27, 110, 34, 0.7) !important;
+    transform: scale(1.03);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.form-floating > .form-control:hover {
+    padding: 1rem 0.75rem;
+}
 td{
    font-size: 25px;
    font-family: georgia;
