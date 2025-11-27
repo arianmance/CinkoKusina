@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Cinko Kusina</title>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Pacifico&display=swap" rel="stylesheet">
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
       body {
@@ -14,8 +14,9 @@
         background-color: #856136;
       }
 
+      /* Navbar */
       .navbar-custom {
-        background: linear-gradient(to right, #b5945f, #cabba5);
+        background: linear-gradient(to right, #765a2e, #cabba5);
       }
       .nav-logo {
     width: 80px;        
@@ -24,23 +25,18 @@
     border-radius: 50%; 
   }
 
-    .logo-text {
-  font-size: 3.5rem;
-  font-family: "Caveat Brush";
-  letter-spacing: 2px;
-  font-weight: 800;
-  color: #333333;
-}
+      .logo-text {
+        font-size: 2.5rem;
+        letter-spacing: 5px;
+        font-weight: 800;
+      }
 
-    .logo-text span {
-  font-family: "Pacifico", cursive;   
-  background: linear-gradient(to right, #6a726a, #7ae6a4);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 2.5rem;
-}
+      .logo-text span {
+        color: #3f5841;
+        font-style: italic;
+      }
 
-     
+      /* Hero Section */
       .hero {
         position: relative;
         background-image: url("bg.png"); 
@@ -53,6 +49,7 @@
         text-decoration: none;
       }
 
+      /* Buttons */
       .menu-btn {
         background: #2b2b2b;
         color: white;
@@ -62,7 +59,6 @@
         margin: 10px;
         box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
         transition: 0.2s;
-        position: relative;
         text-decoration: none;
       }
 
@@ -71,7 +67,7 @@
         color: #fff;
       }
 
-      
+      /* Contact Floating Button */
       .contact-btn {
         position: absolute;
         bottom: 20px;
@@ -84,71 +80,19 @@
         display: flex;
         align-items: center;
         gap: 8px;
-        transition: 0.2s;
         box-shadow: 0px 4px 6px rgba(0,0,0,0.25);
         text-decoration: none;
       }
 
       .contact-btn img {
-          width: 35px;
-          height: 35px;        
-          border-radius: 50%;  
-          object-fit: cover;   
-          background: #dfc1a3;  
-          padding: 5px;  
+        width: 30px;
       }
-      .contact-btn:hover {
-        background: #cbb092;
-        transform: scale(1.05);
-        color: #000;
-      }
-
-      .reserve-btn {
-    position: relative;
-    text-decoration: none;
-    background-color:#7ae6a4;
-}
-    
-    .menu-btn::after,
-    .contact-btn::after {
-        content: "";
-        position: absolute;
-        left: 50%;
-        bottom: 6px;         
-        transform: translateX(-50%);
-        width: 0%;
-        height: 3px;
-        background-color: #56df7f; 
-        transition: width 0.25s ease;
-        border-radius: 5px;
-    }
-  .menu-btn:hover::after,
-  .contact-btn:hover::after {
-        width: 70%; 
-    }
-
-    .reserve-btn::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 6px;  
-    transform: translateX(-50%);
-    width: 0%;
-    height: 3px;
-    background-color: #6c635a;
-    transition: width 0.25s ease;
-    border-radius: 5px;
-}
-.reserve-btn:hover::after {
-    width: 80%;
-}
-
     </style>
   </head>
 
+  <body>  
 
-  <body>
-
+    <!-- NAVBAR -->
     <nav class="navbar navbar-custom px-4">
       <a class="navbar-brand d-flex align-items-center" href="#">
         <img src="cklogo.jpg" class="me-2 nav-logo">
@@ -156,45 +100,24 @@
       </a>
     </nav>
 
+    <!-- HERO SECTION -->
     <section class="hero">
 
       <div class="text-center" >
-        <a href="menu.html" class="menu-btn d-inline-block">OUR MENU</a>
-        <a href="aboutpage.html" class="menu-btn d-inline-block">ABOUT PAGE</a>
+        <a href="#" class="menu-btn d-inline-block">OUR MENU</a>
+        <a href="#" class="menu-btn d-inline-block">ABOUT PAGE</a>
       </div>
 
-      
-       <a href="#" class="contact-btn" data-bs-toggle="modal" data-bs-target="#contactModal">
-          <img src="contactus.jpg" alt="Contact Icon">
-          Contact Us
-       </a>
+      <!-- Contact Floating Button -->
+      <a href="#" class="contact-btn">
+        <img src="https://cdn-icons-png.flaticon.com/512/60/60525.png">
+        Contact Us
+      </a>
 
     </section>
 
-    
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-    <div class="modal fade" id="contactModal" tabindex="-1">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content" style="border-radius: 15px; padding: 20px;">
-
-      <div class="modal-header">
-        <h5 class="modal-title" style="font-weight: 700;">Contact Information</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-
-      <div class="modal-body">
-        <p><strong>📞 Contact Number:</strong> 0912-345-6789</p>
-        <p><strong>📧 Email:</strong> cinkokusina@gmail.com</p>
-      </div>
-
-      <div class="modal-footer">
-        <a href="reservation.html" class="btn btn-success reserve-btn">Reserve Now</a>
-      </div>
-
-    </div>
-  </div>
-  </div>
 
   </body>
   </html>
